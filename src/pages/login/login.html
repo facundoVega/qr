@@ -1,0 +1,28 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<div class="fondo"></div>
+
+<div class="vertical"> 
+
+    <form>
+      <div class="inset">
+          <h1 class="titulo">Lector Qr</h1>
+          <input type="text" name="username" id="email" placeholder="Ingrese correo" value="{{userActual}}">
+          <input type="password" name="password" id="password" placeholder="Ingrese contrase&ntilde;a" value="{{passActual}}">
+          
+          <button ion-button id="go" (click)="login()">Ingresar</button>
+        </div>
+
+    </form>
+    <div class="usuarios">
+        <button ion-button color="danger" (click)="setearUser('invitado@gmail.com','111111')" >Invitado</button>
+        <button ion-button color="danger" (click)="setearUser('usuario@gmail.com','222222')">Usuario</button>
+        <button ion-button color="danger" (click)="setearUser('admin@gmail.com','333333')">Admin</button>
+        <button ion-button color="danger" (click)="setearUser('tester@gmail.com','444444')">Tester</button>
+        <button ion-button color="danger" (click)="setearUser('anonimo@gmail.com','555555')">An&oacute;nimo</button>
+    </div>
+</div>

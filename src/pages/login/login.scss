@@ -1,0 +1,151 @@
+@import url(https://fonts.googleapis.com/css?family=Audiowide);
+
+page-login {
+
+}
+
+.fondo
+{
+    width:100%;
+    height: 100%;
+    background: #1b1b1b;
+    position:absolute;
+    z-index: -2;
+}
+
+.background-wrap {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
+  }
+
+ 
+  .background {
+    background: url('https://myrror.co/etc/419062774_1385132057.jpg'); 
+    background-size: cover;
+    filter: blur(10px);
+    height: 105%;
+    position: relative;
+    width: 105%;
+    right: -2.5%;
+    left: -2.5%;
+    top: -2.5%;
+    bottom: -2.5%;
+  }
+form
+{
+    background: #111;
+    border: 1px solid #191919;
+    border-radius: .4em;
+    bottom: 0;
+    box-shadow: 0 5px 10px 5px rgba(0,0,0,0.2);
+    height: 60%;
+    left: 0;
+    margin: 50px auto;
+    overflow: hidden;
+
+    width: 80%;
+  }
+
+
+ 
+  .inset {
+    border-top: 1px solid #19191a;
+    padding: 20px;
+  }
+  
+  
+  
+.titulo
+{
+    font-family: 'Audiowide';
+    border-bottom: 1px solid #000;
+    font-size: 25px;
+    padding: 15px 0;
+    position: relative;
+    text-align: center;
+    text-shadow: 0 1px 0 #000;
+}
+.titulo
+{
+    color: #FFbb00;
+    font-family: Audiowide;
+    font-weight: normal;
+}
+input[type=text], input[type=password] {
+    background: linear-gradient(#1f2124,#27292c);
+    border: 1px solid #222;
+    border-radius: .3em;
+    box-shadow: 0 1px 0 rgba(255,255,255,0.1);
+    color: #FFF;
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding: 8px 5px;
+    width: 90%;
+    margin-left:5%;
+    margin-top:20px;
+    box-sizing: border-box;
+}
+
+  #go
+  {
+    background: #fb0;
+    border: 1px solid rgba(0,0,0,0.4);
+    border-radius: .3em;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.3), inset 0 10px 10px rgba(255,255,255,0.1);
+    color: #873C00;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    height: 40px;
+    padding: 5px 20px;
+    width: 90%;
+    margin-left:5%;
+  }
+
+.usuarios
+{
+    display:flex;
+    flex-direction: row;
+    position: relative;
+    bottom:0;
+    height: 100px;
+    width:100%;
+}
+.usuarios button
+{
+    margin:auto;
+    font-size: 10px;
+   
+    width:15%;
+}
+.vertical
+{
+    display:flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+@media  screen and(max-height:"500px")
+{
+    .usuarios
+    {
+        display:none !important;
+    }
+    form {
+        height:100%;
+    }
+    
+    input[type=text], input[type=password] {
+        padding:1% 5%;
+        margin: 8px 5%;
+    }
+    
+}

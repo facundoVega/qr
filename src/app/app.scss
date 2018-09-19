@@ -1,3 +1,17 @@
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
 // http://ionicframework.com/docs/theming/
 
 
@@ -14,3 +28,106 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+.splash {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+  
+
+ //align-items: center;
+    //justify-content: center;
+   background-image:url("../assets/imgs/fondoSplash.png");
+   background-size:100% 100%;
+  
+   
+    
+}
+
+.spinner{
+ 
+  margin-top:53%;
+    width:50%;
+    height: 50%;
+ 
+  margin-left:14.5%;
+  animation: zoomOutRight 5.7s infinite ease-in-out;
+
+   
+}
+
+
+@-webkit-keyframes zoomOutRight {
+  40% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(-42px, 0, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(-42px, 0, 0);
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: scale(0.1) translate3d(2000px, 0, 0);
+    transform: scale(0.1) translate3d(2000px, 0, 0);
+    -webkit-transform-origin: right center;
+    transform-origin: right center;
+  }
+}
+
+@keyframes zoomOutRight {
+  40% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(-42px, 0, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(-42px, 0, 0);
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: scale(0.1) translate3d(2000px, 0, 0);
+    transform: scale(0.1) translate3d(2000px, 0, 0);
+    -webkit-transform-origin: right center;
+    transform-origin: right center;
+  }
+}
+
+.zoomOutRight {
+  -webkit-animation-name: zoomOutRight;
+  animation-name: zoomOutRight;
+}
+
+@media screen and (max-height:1400px)
+{
+ 
+  .spinner
+  {
+    
+    margin-top:35%;
+    width:68%;
+    height:40%;
+    margin-left:19%;
+  }
+}
+
+@media screen and (max-height:900px)
+{
+ 
+  .spinner
+  {
+    
+    margin-top:57%;
+    width:69%;
+    height:40%;
+    margin-left:18%;
+  }
+}
+@media screen and (max-height:800px)
+{
+ 
+  .spinner
+  {
+    
+    margin-top:46%;
+    width:69%;
+    height:40%;
+    margin-left:18%;
+  }
+}
